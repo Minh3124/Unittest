@@ -6,4 +6,3 @@ node_js:
 cache:
   directories:
     - "node_modules"
-install: travis_wait mvn install
