@@ -23,19 +23,16 @@ rl.question('Welcome to BMI calculator. How old are you?(0-150)', (answer) => {
             bmi=computeBMI(height,weight);
             BMImeaning(bmi);
           }   
-          }); 
-    }
+        }); 
+      }
       
-}); 
-   
-  } else {
-    rl.question('How old are you', (answer) => {
-        x= answer
-    }); 
-  }
+    });
+  } 
+});  
 
 
-}); 
+
+
 
 function ageValidation(age){
   
@@ -43,6 +40,7 @@ function ageValidation(age){
     console.log("Please enter your real age!") ;
     rl.question('Please answer again?', (answer) => {
       x=ageValidation(answer);
+      return;
     }); 
     return false;
   } else {
@@ -59,6 +57,7 @@ function heightValidation(height){
       rl.question('Please answer again?', (answer1) => {
         height=answer1;
         h=heightValidation(height);
+        return;
       });
       return false;
     } else {
@@ -72,6 +71,7 @@ function weightValidation(weight){
       rl.question('Please answer again?', (answer2) => {
         weight=answer2;
         w=weightValidation(weight);
+        return;
       });
       return false;
     } else {
