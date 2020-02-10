@@ -32,16 +32,14 @@ rl.question('Welcome to BMI calculator. How old are you?(0-150)', (answer) => {
 
 
 
-
-
 function ageValidation(age){
   
   if (isNaN(age) || age < 0 || age > 150) {
-    console.log("Please enter your real age!") ;
-    rl.question('Please answer again?', (answer) => {
-      x=ageValidation(answer);
-      return;
-    }); 
+    //console.log("Please enter your real age!") ;
+    //rl.question('Please answer again?', (answer) => {
+      //x=ageValidation(answer);
+      //return;
+    //}); 
     return false;
   } else {
     console.log("Thank you for honest answer");
@@ -53,12 +51,12 @@ function ageValidation(age){
 function heightValidation(height){
 
     if (isNaN(height) || height < 10 || height > 300) {
-      console.log("Are you a giant or ?") ;
-      rl.question('Please answer again?', (answer1) => {
-        height=answer1;
-        h=heightValidation(height);
-        return;
-      });
+      //console.log("Are you a giant or ?") ;
+      //rl.question('Please answer again?', (answer1) => {
+        //height=answer1;
+        //h=heightValidation(height);
+        //return;
+      //});
       return false;
     } else {
       return true;
@@ -67,12 +65,12 @@ function heightValidation(height){
 };
 function weightValidation(weight){
     if (isNaN(weight) || weight < 0 || weight > 700) {
-      console.log("Are you a giant or ?") ;
-      rl.question('Please answer again?', (answer2) => {
-        weight=answer2;
-        w=weightValidation(weight);
-        return;
-      });
+      //console.log("Are you a giant or ?") ;
+      //rl.question('Please answer again?', (answer2) => {
+        //weight=answer2;
+        //w=weightValidation(weight);
+        //return;
+      //});
       return false;
     } else {
       return true;
