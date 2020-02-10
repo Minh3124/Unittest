@@ -1,6 +1,6 @@
 const expect  = require('chai').expect;
 const assert = require('chai').assert;
-const BMI = require('../app.js');
+const BMI = require('../BMI.js');
 
 describe('Age validation', function() {
     const assertions = [
