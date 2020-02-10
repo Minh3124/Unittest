@@ -22,12 +22,12 @@ rl.question('Welcome to BMI calculator. How old are you?(0-150)', (answer) => {
           if(w==true){
             bmi=computeBMI(height,weight);
             BMImeaning(bmi);
-          }   
+          }else return false;   
         }); 
-      }
+      }else return false;
       
     });
-  } 
+  } else return false;
 });  
 
 
